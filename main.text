@@ -180,11 +180,22 @@ Coordinates of O(p1,q1)
 \implies q1=6.13
 \end{align}
 \\
+The vertex O can be expressed in polar coordinate form as 
+\begin {align}
+\vec{O} = l\myvec{\cos \theta\\ \sin \theta}
+\end{align}
+O can be expressed as 
+\begin{align}
+\vec{O} = l\myvec{\ cos O \\ \ sin O}
+\\
+\vec{O} = \myvec{\ 5.324 \\ \ 3.728}
+\end{align}
+\\
 So, the vertices of $\triangle OLD$ are
 \begin{align}
 \vec{L} = \myvec{0\\0} ,
 \vec{D} = \myvec{6.5\\0}, 
-\vec{O} = \myvec{-2.14\\6.13}
+\vec{O} = \myvec{5.324\\3.728}
 \end{align}
 \\
  Now, Isosceles $\triangle OLD$ can be plotted using vertices $LD$ ,$OL$ and $DO$.

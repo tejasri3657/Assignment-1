@@ -153,6 +153,24 @@ The vertices are:
 \vec{D} = \myvec{ld\\0}, 
 \vec{O} = \myvec{p1\\q1}
 \end{align}
+Finding $\angle O$ and $\angle D$
+\\
+In $\triangle OLD$,
+\begin{align}
+\angle O+\angle L+\angle D=180^{\degree}
+\\
+\angle O=\angle D=x
+\\
+\ x+110^{\degree}+x = 180^{\degree}
+\\
+\ 2x = 180^{\degree}-110^{\degree}
+\\
+\ 2x = 70^{\degree}
+\\
+\ x = 35^{\degree}
+\\
+\implies  x=\angle O=\angle L=35^{\degree}
+\end{align}
 Now, Lines $od$ , $ol$ and $ld$ Can be plotted.
 \
 \begin{align}
@@ -182,11 +200,17 @@ Coordinates of O(p1,q1)
 \\
 The vertex O can be expressed in polar coordinate form as 
 \begin {align}
-\vec{O} = l\myvec{\cos \theta\\ \sin \theta}
+\vec{O} = ol\myvec{\cos \theta\\ \sin \theta}
 \end{align}
 O can be expressed as 
 \begin{align}
-\vec{O} = l\myvec{\ cos O \\ \ sin O}
+\vec{O} = ol\myvec{\ cos O \\ \ sin O}
+\\
+Here, ol=6.5
+\\
+\vec{O} = 6.5\myvec{\ cos 35 \\ \ sin 35}
+\\
+\vec{O} = 6.5\myvec{\ 0.819 \\ \ 0.573}
 \\
 \vec{O} = \myvec{\ 5.324 \\ \ 3.728}
 \end{align}

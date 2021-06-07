@@ -1,5 +1,5 @@
 \documentclass[journal,12pt,twocolumn]{IEEEtran}
-
+\usepackage{float}
 \usepackage{setspace}
 \usepackage{gensymb}
 
@@ -143,7 +143,6 @@ https://github.com/teja3657/Assignment1/blob/master/Assignment1.tex
 \end{lstlisting}
 %
 \section{Question No.2.16}
-
 Construct an isosceles triangle in which the lengths of the equal sides is 6.5 and the angle between them is $110{\degree}$.
 %
 \section{SOLUTION}
@@ -153,80 +152,71 @@ The vertices are:
 \vec{D} = \myvec{ld\\0}, 
 \vec{O} = \myvec{p1\\q1}
 \end{align}
-Finding $\angle O$ and $\angle D$
-\\
+Finding $\angle O$ and $\angle D$:
+
 In $\triangle OLD$,
 \begin{align}
-\angle O+\angle L+\angle D=180^{\degree}
+\angle O+\angle L+\angle D&=180^{\degree}
+\quad\brak{\because \angle O=\angle D=x}
 \\
-\angle O=\angle D=x
+\ x+110^{\degree}+x&=180^{\degree}
 \\
-\ x+110^{\degree}+x = 180^{\degree}
+\ 2x &=180^{\degree}-110^{\degree}
 \\
-\ 2x = 180^{\degree}-110^{\degree}
+\ 2x &=70^{\degree}
 \\
-\ 2x = 70^{\degree}
-\\
-\ x = 35^{\degree}
-\\
-\implies  x=\angle O=\angle L=35^{\degree}
+\ x &=35^{\degree} \quad\brak{\because \angle O=\angle D=35^{\degree}}
 \end{align}
 Now, Lines $od$ , $ol$ and $ld$ Can be plotted.
 \
 \begin{align}
-\vec{OD}=2{a}{\cos(35)}
+\vec{OD}&=2{a}{\cos(35)} \quad\brak{\because a=ol=6.5}
 \\
-(here, a=ol=6.5)
+&=(13){\cos(35)}
 \\
-\vec{OD}=(13){\cos(35)}=10.6
+&=10.6
 \end{align}
-\\
 Coordinates of O(p1,q1)
 \begin{align}
-\vec{p1}=\frac{ld^2+ol^2-od^2}{2(ld)}
+\vec{p1}&=\frac{ld^2+ol^2-od^2}{2(ld)}
 \\
-\vec{p1}=\frac{(6.5)^2+(6.5)^2-(10.6)^2}{2(6.5)}
+&=\frac{(6.5)^2+(6.5)^2-(10.6)^2}{2(6.5)}
 \\
-\vec{p1}=\frac{42.25+42.25-112.36}{13}
+&=\frac{42.25+42.25-112.36}{13}
 \\
-\implies p1=-2.14
+&=-2.14
 \\
-\vec{q1}=\sqrt{(ol)^2-(p1)^2}
+\vec{q1}&=\sqrt{(ol)^2-(p1)^2}
 \\
-\vec{q1}=\sqrt{(6.5)^2-(-2.14)^2}
+&=\sqrt{(6.5)^2-(-2.14)^2}
 \\
-\implies q1=6.13
+&=6.13
 \end{align}
-\\
 The vertex O can be expressed in polar coordinate form as 
 \begin {align}
-\vec{O} = ol\myvec{\cos \theta\\ \sin \theta}
+\vec{O} &= ol\myvec{\cos \theta\\ \sin \theta}
 \end{align}
 O can be expressed as 
 \begin{align}
-\vec{O} = ol\myvec{\ cos O \\ \ sin O}
+\vec{O} &= ol\myvec{\ cos O \\ \ sin O} \quad\brak{\because a=ol=6.5}
 \\
-Here, ol=6.5
+&= 6.5\myvec{\ cos 35 \\ \ sin 35}
 \\
-\vec{O} = 6.5\myvec{\ cos 35 \\ \ sin 35}
+&= 6.5\myvec{\ 0.819 \\ \ 0.573}
 \\
-\vec{O} = 6.5\myvec{\ 0.819 \\ \ 0.573}
-\\
-\vec{O} = \myvec{\ 5.324 \\ \ 3.728}
+&= \myvec{\ 5.324 \\ \ 3.728}
 \end{align}
-\\
 So, the vertices of $\triangle OLD$ are
 \begin{align}
-\vec{L} = \myvec{0\\0} ,
-\vec{D} = \myvec{6.5\\0}, 
-\vec{O} = \myvec{5.324\\3.728}
+\vec{L}=\myvec{0\\0},
+\vec{D}=\myvec{6.5\\0}, 
+\vec{O}=\myvec{5.324\\3.728}
 \end{align}
+Now, Isosceles $\triangle OLD$ can be plotted using vertices $LD$ ,$OL$ and $DO$.
 \\
- Now, Isosceles $\triangle OLD$ can be plotted using vertices $LD$ ,$OL$ and $DO$.
-\\
-Plot of the Isosceles $\triangle OLD$ is required.
+Plot of the Isosceles $\triangle OLD$:
 \numberwithin{figure}{section}
-\begin{figure}[!ht]
+\begin{figure}[H]
 \centering
 \includegraphics[width=\columnwidth]{diagram-1.png}
 \caption{Isosceles  triangle $\triangle OLD$}

@@ -147,46 +147,46 @@ Construct an isosceles triangle in which the lengths of the equal sides is 6.5 a
 \section{SOLUTION}
 The vertices are:
 \begin{align}
-\vec{L} = \myvec{0\\0},
-\vec{D} = \myvec{ld\\0}, 
-\vec{O} = \myvec{p1\\q1}
+\vec{A} = \myvec{0\\0},
+\vec{C} = \myvec{a\\0}, 
+\vec{B} = \myvec{p\\q}
 \end{align}
-In $\triangle OLD$,
+In $\triangle ABC$,
 \begin{align}
-\angle O+\angle L+\angle D&=180^{\degree}
-\quad\brak{\because \angle O=\angle D}
+\angle A+\angle B+\angle C&=180^{\degree}
+\quad\brak{\because \angle B=\angle C}
 \\
-\angle O=\angle D=35^{\degree}
+\angle B=\angle C=35^{\degree}
 \end{align}
 \begin{align}
-\vec{OD}&=2{a}{\cos(35)} \quad\brak{\because a=ol=6.5}
+\vec{BC}&=2{a}{\cos(35)} \quad\brak{\because a=6.5}
 \\
 &=10.6
 \end{align}
-The vertex O can be expressed in polar coordinate form as 
+The vertex B can be expressed in polar coordinate form as 
 \begin {align}
-\vec{O} &= ol\myvec{\cos \theta\\ \sin \theta}
+\vec{B} &= b\myvec{\cos A\\ \sin A}
 \end{align}
-O can be expressed as 
+B can be expressed as 
 \begin{align}
-&= 6.5\myvec{\ cos 35 \\ \ sin 35}\quad\brak{\because ol=6.5}
+&= 6.5\myvec{\ cos 110 \\ \ sin 110}\quad\brak{\because b=6.5}
 \\
-&= 6.5\myvec{\ 0.819 \\ \ 0.573}
+&= 6.5\myvec{\ -0.34202 \\ \ 0.93969}
 \\
-&= \myvec{\ 5.324 \\ \ 3.728}
+&= \myvec{\ -2.22313 \\ \ 6.10798}
 \end{align}
-So, the vertices of $\triangle OLD$ are
+So, the vertices of $\triangle ABC$ are
 \begin{align}
-\vec{L}=\myvec{0\\0},
-\vec{D}=\myvec{6.5\\0}, 
-\vec{O}=\myvec{5.324\\3.728}
+\vec{A}=\myvec{0\\0},
+\vec{C}=\myvec{6.5\\0}, 
+\vec{B}=\myvec{-2.22313\\6.10798}
 \end{align}
-Plot of the Isosceles $\triangle OLD$:
+Plot of the Isosceles $\triangle ABC$:
 \numberwithin{figure}{section}
 \begin{figure}[H]
 \centering
 \includegraphics[width=\columnwidth]{diagram.png}
-\caption{Isosceles  triangle $\triangle OLD$}
+\caption{Isosceles  triangle $\triangle ABC$}
 \label{fig:isosceles_triangle}	
 \end{figure}
 \end{document}

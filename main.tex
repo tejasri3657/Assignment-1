@@ -145,57 +145,39 @@ https://github.com/teja3657/Assignment1/blob/master/Assignment1.tex
 Construct an isosceles triangle in which the lengths of the equal sides is 6.5 and the angle between them is $110{\degree}$.
 %
 \section{SOLUTION}
-The vertices are:
+Let the vertices are:
 \begin{align}
 \vec{A} = \myvec{0\\0},
-\vec{C} = \myvec{a\\0}, 
-\vec{B} = \myvec{p\\q}
+\vec{C} = \myvec{b\\0}, 
+\vec{B} = c\myvec{\cos A\\\sin A}
 \end{align}
-In $\triangle ABC$,
-\begin{align}
-\angle A+\angle B+\angle C&=180^{\degree}
-\quad\brak{\because \angle B=\angle C}
-\\
-\angle B=\angle C=35^{\degree}
-\\
-BC&=2(6.5)\cos{(35)}
-\\
-c&=10.64
-\end{align}
+
 The vertex B can be expressed in polar coordinate form as
 \begin {align}
 \vec{B} &= c\myvec{\cos A\\ \sin A}
+\\
+\vec{B} &= 6.5\myvec{\cos 110\\ \sin 110}
+\\
+B&= 6.5\myvec{\ -0.34202 \\ \ 0.93969}
+\\
+B&= \myvec{\ -2.22313 \\ \ 6.10798}
 \end{align}
-From $\triangle ABC$,we use the law of cosines:
-\begin{align}
-b^2 = c^2+a^2-2ca \cos B
-\\
-\cos B = \frac{c^2+a^2-b^2}{2ca}
-\\
-\cos B = \frac{112.36}{137.8}
-\\
-\cos B = 0.815
-\\
-\vec{B} = 35.412
-\end{align}
-B can be expressed as 
-\begin{align}
-B&= 10.6\myvec{\ -0.34202 \\ \ 0.93969}
-\\
-&= \myvec{\ -2.22313 \\ \ 6.10798}
-\end{align}
-So, the vertices of $\triangle ABC$ are
+So, the vertices of isosceles $\triangle ABC$ are
 \begin{align}
 \vec{A}=\myvec{0\\0},
 \vec{C}=\myvec{6.5\\0}, 
 \vec{B}=\myvec{-2.22313\\6.10798}
 \end{align}
+Now, Lines $AB$ , $BC$ and $CA$ Can be plotted
+using these coordinates to form an isosceles $\triangle ABC$.
+
+
 Plot of the Isosceles $\triangle ABC$:
 \numberwithin{figure}{section}
 \begin{figure}[H]
 \centering
 \includegraphics[width=\columnwidth]{diagram.png}
-\caption{Isosceles  triangle $\triangle ABC$}
+\caption{Isosceles $\triangle ABC$}
 \label{fig:isosceles_triangle}	
 \end{figure}
 \end{document}
